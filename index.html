@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h2>📝 My To-Do List</h2>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <div class="container">
+    <h2>To-Do List 📋</h2>
+    <div class="form">
+      <input type="text" id="taskInput" placeholder="Enter your task..." />
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input type="date" id="dueDate" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button id="clearAllBtn" onclick="clearAllTasks()">Clear All</button>
+  </div>
+
+  <footer>
+    <p>Made with by Shubham Pathak &copy; 2025. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
